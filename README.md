@@ -11,7 +11,8 @@ texts/en/*.yaml      Englische Texte, gleiche Schlüssel wie die deutschen
 src/pages/*.njk      Seitentemplates (Aufbau/HTML), werden pro Sprache gerendert
 src/_includes/       Grundlayout (Kopf, Navigation, Fußzeile) und Makros
 src/_data/site.js    Sprachen, Pfade, Kontakt-E-Mail
-src/assets/          styles.css, script.js (werden unverändert kopiert)
+src/assets/          styles.css, script.js, favicon.ico, apple-touch-icon.png (werden unverändert kopiert)
+design/favicon/      SVG-Vorlagen des Favicons (favicon-16.svg ist die vereinfachte Variante für 16 px)
 _site/               Generierte Website (nicht bearbeiten, wird bei jedem Build neu erzeugt)
 draft-v1/            Ursprünglicher Entwurf als Referenz
 ```
