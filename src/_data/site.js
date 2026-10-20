@@ -4,4 +4,5 @@ export default {
   dir: { de: "", en: "en/" },
   root: { de: "", en: "../" },
   email: "kontakt@markowetz.de",
+  url: "https://modularmedtech.org",
 };

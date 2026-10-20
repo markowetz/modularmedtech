@@ -1,5 +1,6 @@
 {%- set otherHref = r + site.dir[other] + key + ".html" -%}
 {%- set oc = texts[other].common -%}
+{%- set pagePath = "" if key == "index" else key + ".html" -%}
 <!DOCTYPE html>
 <html lang="{{ lang }}">
 <head>
@@ -10,7 +11,11 @@
 <title>{{ t.meta.title }}</title>
 <link rel="stylesheet" href="{{ r }}styles.css">
 <script defer src="{{ r }}script.js"></script>
-<link rel="alternate" hreflang="{{ other }}" href="{{ otherHref }}">
+<link rel="canonical" href="{{ site.url }}/{{ site.dir[lang] }}{{ pagePath }}">
+{%- for l in site.languages %}
+<link rel="alternate" hreflang="{{ l }}" href="{{ site.url }}/{{ site.dir[l] }}{{ pagePath }}">
+{%- endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/{{ pagePath }}">
 <meta name="language" content="{{ lang }}">
 </head>
 <body>

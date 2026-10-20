@@ -34,17 +34,32 @@ npm run build    # erzeugt _site/
 npm run check    # vergleicht _site/ mit draft-v1/ (nur sinnvoll, solange die Inhalte gleich sind)
 ```
 
-## Veröffentlichen
+## Veröffentlichen (Hosting)
 
-`npm run build` ausführen und den Inhalt von `_site/` auf einen beliebigen statischen Webhost laden.
+Die Website läuft über **GitHub Pages** unter **https://modularmedtech.org**, nach demselben Prinzip wie the-gesamtschau.de.
 
-## Vor der Veröffentlichung (aus dem Entwurf übernommen)
+- Repository: `github.com/markowetz/modularmedtech` (öffentlich, Branch `main`)
+- Deployment: `git push origin main`. Der Workflow `.github/workflows/deploy.yml` baut die Seite
+  mit Eleventy und veröffentlicht `_site/`. Nach ca. 1 Minute ist die Änderung live.
+- Domain: `src/assets/CNAME` (`modularmedtech.org`), Basis-URL für Canonical-Links in `src/_data/site.js`
+
+### DNS-Einträge beim Domain-Anbieter
+
+| Typ   | Host  | Ziel                   |
+|-------|-------|------------------------|
+| A     | `@`   | `185.199.108.153`      |
+| A     | `@`   | `185.199.109.153`      |
+| A     | `@`   | `185.199.110.153`      |
+| A     | `@`   | `185.199.111.153`      |
+| CNAME | `www` | `markowetz.github.io`  |
+
+Status prüfen: Repository → Settings → Pages, oder `dig modularmedtech.org A`.
+
+## Offene Punkte (aus dem Entwurf übernommen)
 
 1. Impressumsangaben prüfen und ggf. weitere Kontaktwege (z. B. Telefon) ergänzen.
-2. Beide Datenschutzhinweise an Hoster, Server-Logs, Auftragsverarbeiter, Speicherdauer und
-   Rechtsgrundlagen anpassen. Die vorhandenen Texte sind Entwürfe, keine Rechtsberatung.
+2. Datenschutzhinweise (auf GitHub Pages angepasst) rechtlich prüfen lassen; die Texte sind keine Rechtsberatung.
 3. Verhältnis zwischen Bewegung und Website-Betreiberin klären (The Gesamtschau Institute UG
    (haftungsbeschränkt), Ippendorfer Allee 31, 53127 Bonn) und die Kontaktadresse in `src/_data/site.js` prüfen.
 4. Aussagen zu Finanzierung und Umsetzung prüfen: 1,000 Villages ist als Aufruf/Vorschlag formuliert,
    nicht als bereits finanziertes Programm.
-5. Nach Wahl der Domain Canonical-URLs und ggf. Suchmaschinen-Metadaten ergänzen.

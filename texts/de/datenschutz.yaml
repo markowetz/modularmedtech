@@ -9,10 +9,6 @@ hero:
   title: Datenschutz.
   text: Hinweise zur Verarbeitung personenbezogener Daten auf dieser Website.
 
-notice:
-  strong: "Vor Veröffentlichung prüfen:"
-  text: Diese Datenschutzhinweise sind auf die hier erstellte statische Website abgestimmt. Angaben über den tatsächlichen Hosting-Anbieter, Serverprotokolle und gegebenenfalls eingesetzte Dienstleister müssen nach Wahl des Hostings ergänzt und rechtlich geprüft werden.
-
 controller:
   title: 1. Verantwortlicher
   address:
@@ -23,14 +19,14 @@ controller:
 
 sections:
   - title: 2. Zugriff auf die Website
-    text: Die Website ist technisch als statisches Angebot gestaltet und benötigt keine Benutzerkonten, eingebetteten externen Schriften, Analyse-Skripte oder Drittanbieter-Trackingtools. Beim Abruf können durch den jeweiligen Webhosting-Anbieter technisch erforderliche Verbindungsdaten und Serverprotokolle verarbeitet werden, beispielsweise IP-Adresse, Datum und Uhrzeit sowie angeforderte Dateien. Einzelheiten, Rechtsgrundlagen und Speicherfristen sind nach Festlegung des Hosters hier zu ergänzen.
+    text: Die Website ist ein statisches Angebot ohne Benutzerkonten, eingebettete externe Schriften, Analyse-Skripte oder Tracking-Tools von Drittanbietern. Sie wird über GitHub Pages (GitHub, Inc., San Francisco, USA) gehostet. Beim Abruf verarbeitet GitHub technische Zugriffsdaten wie IP-Adresse, Datum und Uhrzeit, angeforderte Dateien und Browserangaben, um die Website auszuliefern und den sicheren Betrieb zu gewährleisten. Rechtsgrundlage ist unser berechtigtes Interesse an einer zuverlässigen Bereitstellung der Website (Art. 6 Abs. 1 lit. f DSGVO). Dabei können Daten in die USA übermittelt werden. Weitere Informationen enthält das <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.
   - title: 3. Kontaktaufnahme per E-Mail
     text: Wenn Sie uns eine E-Mail schreiben, verarbeiten wir Ihre Angaben, um Ihre Anfrage zu beantworten und gegebenenfalls eine Zusammenarbeit zu besprechen. Der konkrete Zweck und die Rechtsgrundlage richten sich nach Inhalt und Kontext der Anfrage. Bitte übermitteln Sie keine unnötigen sensiblen Gesundheitsdaten.
   - title: 4. Cookies und externe Dienste
-    text: Der gelieferte Website-Code verwendet keine Tracking-Cookies, keine externen eingebetteten Inhalte und keine Webanalyse. Änderungen durch spätere Hosting- oder Drittanbieterfunktionen sind bei Veröffentlichung erneut zu prüfen.
+    text: Diese Website setzt keine Cookies, bindet keine externen Inhalte ein und verwendet keine Webanalyse.
   - title: 5. Betroffenenrechte
     text: Im Rahmen der gesetzlichen Voraussetzungen können Sie insbesondere Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch und gegebenenfalls Datenübertragbarkeit verlangen. Sie haben das Recht, sich bei einer zuständigen Datenschutzaufsichtsbehörde zu beschweren.
   - title: 6. Änderungen
     text: Diese Informationen sind bei Änderungen des Website-Betriebs und der eingesetzten Dienste zu aktualisieren.
 
-status: "Stand: Oktober 2026 · Entwurfsstand für die technische Website."
+status: "Stand: Oktober 2026"

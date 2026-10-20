@@ -2,16 +2,12 @@
 # The email address is maintained centrally in src/_data/site.js.
 meta:
   title: Privacy policy | Modular MedTech
-  description: Privacy notice for the Modular MedTech static website, pending review of the chosen hosting provider.
+  description: Privacy notice for the Modular MedTech website and contact by email.
 
 hero:
   label: Legal information
   title: Privacy policy.
   text: Information on the processing of personal data on this website.
-
-notice:
-  strong: "Review before publication:"
-  text: This privacy notice is tailored to the static website created here. Once hosting is selected, information about the actual hosting provider, server logs and any service providers must be added and reviewed for legal compliance.
 
 controller:
   title: 1. Data controller
@@ -23,14 +19,14 @@ controller:
 
 sections:
   - title: 2. Accessing the website
-    text: The website is designed as a static site and does not require user accounts, externally hosted fonts, analytics scripts or third-party tracking tools. When the website is accessed, the hosting provider may process technically necessary connection data and server logs, such as IP address, date and time, and files requested. Details, legal bases and retention periods must be added here after a hosting provider has been selected.
+    text: The website is a static site without user accounts, externally hosted fonts, analytics scripts or third-party tracking tools. It is hosted via GitHub Pages (GitHub, Inc., San Francisco, USA). When the website is accessed, GitHub processes technical access data such as IP address, date and time, files requested and browser information in order to deliver the website and keep it secure. The legal basis is our legitimate interest in reliably providing the website (Art. 6(1)(f) GDPR). Data may be transferred to the USA in the process. Further information is available in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.
   - title: 3. Contact by email
     text: If you email us, we process the information you provide to respond to your inquiry and, where relevant, discuss collaboration. The specific purpose and legal basis depend on the content and context of the inquiry. Please do not send unnecessary sensitive health data.
   - title: 4. Cookies and external services
-    text: The supplied website code uses no tracking cookies, externally embedded content or web analytics. Any changes introduced by subsequent hosting or third-party features must be reassessed before publication.
+    text: This website does not set cookies, embed external content or use web analytics.
   - title: 5. Your data protection rights
     text: Subject to statutory conditions, you may request access, rectification, erasure, restriction of processing, object to processing and, where applicable, data portability. You also have the right to lodge a complaint with the competent data protection supervisory authority.
   - title: 6. Changes
     text: This notice must be updated if the website’s operation or the services it uses change.
 
-status: As of October 2026 · Draft for the technical website.
+status: As of October 2026
