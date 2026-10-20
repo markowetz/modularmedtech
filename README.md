@@ -55,6 +55,11 @@ Die Website läuft über **GitHub Pages** unter **https://modularmedtech.org**, 
 
 Status prüfen: Repository → Settings → Pages, oder `dig modularmedtech.org A`.
 
+Bei IONOS muss dafür zuerst der Service „Default Site“ weg: den vorhandenen A-Eintrag `@` per Stift auf
+`185.199.108.153` ändern, dann deaktiviert IONOS die Platzhalter-Einträge (A, AAAA, `_dep_ws_mutex`) automatisch.
+HTTPS ist erzwungen. Falls GitHub kein Zertifikat ausstellt (z. B. weil die Domain beim ersten Prüfen noch nicht
+auflöste): unter Settings → Pages die Custom Domain entfernen und neu eintragen.
+
 ## Festlegungen
 
 - Impressum und Datenschutz laufen über The Gesamtschau Institute UG (haftungsbeschränkt), Bonn.
