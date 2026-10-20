@@ -1,0 +1,26 @@
+# Texts that appear on every page (header, navigation, footer).
+brand_label: Modular MedTech – home
+menu_open: Open menu
+quick_nav_label: Quick navigation
+nav_label: Main navigation
+nav:
+  - { page: manifest, label: Manifest }
+  - { page: device, label: The Device }
+  - { page: villages, label: "1,000 Villages" }
+nav_cta: Get involved ↗
+# Language switch that leads from the German pages to the English version
+switch_label: Switch to English
+switch_text: EN
+footer:
+  claim: An open movement for independently developed, reusable medical capabilities.
+  explore: Explore
+  explore_links:
+    - { page: manifest, label: The Manifest }
+    - { page: device, label: The Device }
+    - { page: villages, label: "1,000 Villages" }
+    - { page: mitmachen, label: Get involved }
+  contact: Contact & legal
+  imprint: Legal notice
+  privacy: Privacy
+  copyright: © 2026 Modular MedTech · An initiative taking shape
+  operator: "Website operator: The Gesamtschau Institute UG (haftungsbeschränkt)"

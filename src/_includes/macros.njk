@@ -1,0 +1,15 @@
+{% macro arrow() %}<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M4 12h16m-7-7 7 7-7 7"></path></svg>{% endmacro %}
+
+{# Dark page header used on all subpages. hero: { label, title, text }; trace: draw the circuit line at the top. #}
+{% macro pageHero(hero, trace=false) %}
+<section class="page-hero">
+  {%- if trace %}
+  <div class="top-trace"><svg aria-hidden="true" fill="none" viewbox="0 0 600 600"><g opacity=".6" stroke="#a8f198" stroke-width="1"><circle cx="300" cy="300" r="245"></circle><circle cx="300" cy="300" r="192"></circle><circle cx="300" cy="300" r="136"></circle><circle cx="300" cy="300" r="80"></circle><path d="M300 0v600M0 300h600M88 88l424 424M512 88 88 512"></path></g><g fill="#10251e" stroke="#dffc93" stroke-width="3"><circle cx="300" cy="55" r="10"></circle><circle cx="492" cy="300" r="10"></circle><circle cx="300" cy="436" r="10"></circle><circle cx="108" cy="300" r="10"></circle><circle cx="244" cy="244" r="10"></circle><circle cx="396" cy="396" r="10"></circle></g><g stroke="#dffc93" stroke-width="2"><path d="M300 55 244 244 108 300 300 436 396 396 492 300"></path><path d="M244 244 396 396 492 300"></path></g></svg></div>
+  {%- endif %}
+  <div class="wrap">
+    <div class="eyebrow"><span class="dash"></span>{{ hero.label }}</div>
+    <h1 class="page-title">{{ hero.title }}</h1>
+    <p>{{ hero.text }}</p>
+  </div>
+</section>
+{% endmacro %}

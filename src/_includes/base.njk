@@ -1,0 +1,64 @@
+{%- set otherHref = r + site.dir[other] + key + ".html" -%}
+{%- set oc = texts[other].common -%}
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#122521">
+<meta name="description" content="{{ t.meta.description }}">
+<title>{{ t.meta.title }}</title>
+<link rel="stylesheet" href="{{ r }}styles.css">
+<script defer src="{{ r }}script.js"></script>
+<link rel="alternate" hreflang="{{ other }}" href="{{ otherHref }}">
+<meta name="language" content="{{ lang }}">
+</head>
+<body>
+<nav class="quick-nav" aria-label="{{ c.quick_nav_label }}">
+  <div class="wrap">
+    {%- for item in c.nav %}
+    <a href="{{ item.page }}.html"{% if item.page == key %} aria-current="page"{% endif %}>{{ item.label }}</a>
+    {%- endfor %}
+  </div>
+</nav>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="{{ c.brand_label }}"><svg aria-hidden="true" class="brand-mark" fill="none" viewbox="0 0 36 36"><path d="M4 5h10v10H4zM22 5h10v10H22zM4 23h10v10H4zM22 23h10v10H22z" stroke="currentColor" stroke-width="2.5"></path><path d="M14 10h8M9 15v8M27 15v8M14 28h8" stroke="currentColor" stroke-width="2.5"></path></svg><span>modular medtech<span style="color:#799078">.</span></span></a>
+    <button class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="{{ c.menu_open }}"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"></path></svg></button>
+    <nav class="main-nav" id="main-nav" aria-label="{{ c.nav_label }}">
+      {%- for item in c.nav %}
+      <a href="{{ item.page }}.html"{% if item.page == key %} aria-current="page" class="active"{% endif %}>{{ item.label }}</a>
+      {%- endfor %}
+      <a href="mitmachen.html"{% if key == 'mitmachen' %} aria-current="page" class="nav-cta active"{% else %} class="nav-cta"{% endif %}>{{ c.nav_cta }}</a>
+      <a href="{{ otherHref }}" class="lang-switch" hreflang="{{ other }}" lang="{{ other }}" aria-label="{{ oc.switch_label }}">{{ oc.switch_text }}</a>
+    </nav>
+  </div>
+</header>
+<main id="main-content">
+{% block main %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">modular medtech<span style="color:#73966b">.</span></div>
+        <p>{{ c.footer.claim }}</p>
+      </div>
+      <div class="footer-links">
+        <div class="eyebrow">{{ c.footer.explore }}</div>
+        {%- for item in c.footer.explore_links %}
+        <a href="{{ item.page }}.html">{{ item.label }}</a>
+        {%- endfor %}
+      </div>
+      <div class="footer-links">
+        <div class="eyebrow">{{ c.footer.contact }}</div>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <a href="impressum.html">{{ c.footer.imprint }}</a>
+        <a href="datenschutz.html">{{ c.footer.privacy }}</a>
+      </div>
+    </div>
+    <div class="footer-small"><span>{{ c.footer.copyright }}</span><span>{{ c.footer.operator }}</span></div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+# Home page. Texts may contain simple HTML: <br> (line break), <em> (emphasis).
+meta:
+  title: Building open medical technology together | Modular MedTech
+  description: "Modular MedTech: a global open movement for independently developed, reusable medical capabilities."
+
+hero:
+  kicker: An open global movement
+  title: Medical technology.<br><span class="serif">Rethought.</span> <span class="accent">Rebuilt.</span><br>Together.
+  copy: We are replacing closed, vertically integrated software products with an open ecosystem of reusable medical capabilities.
+  button_manifest: Read the Manifest
+  button_join: Join the movement
+  keywords:
+    - OPEN SEMANTICS
+    - RECOMBINABLE CAPABILITIES
+    - GLOBAL COLLABORATION
+
+mission:
+  label: Our mission
+  quote: Bring medical capabilities within everyone’s reach — by enabling more people to develop medical technology.
+
+blocks:
+  label: Three building blocks
+  title: One idea. <em>Two concrete initiatives.</em>
+  intro: The Manifest sets out our approach. The Device puts it to the technical test. 1,000 Villages builds the international network.
+  items:
+    - number: 01 / THE IDEA
+      title: The<br>Manifest.
+      text: Why medical technology needs a new development model — and the ten principles that unite us.
+      link: Read the Manifest
+      page: manifest
+    - number: 02 / THE PROOF
+      title: The<br>Device.
+      text: Tablet, ultrasound and AI. A functioning diagnostic system built from independently composable modules.
+      link: Explore the project
+      page: device
+      style: dark
+    - number: 03 / THE MOVEMENT
+      title: 1,000<br>Villages.
+      text: 1,000 devices for 1,000 villages in the Global South. Connecting people, learning from field experience and collaborating.
+      link: Explore the initiative
+      page: villages
+      style: lime
+
+thesis:
+  label: The central thesis
+  title: Capabilities instead of<br>complete products.
+  paragraphs:
+    - Conventional medical software bundles many functions into complete process chains for specific use cases. Even testing a single idea becomes costly.
+    - We develop small, semantically described modules that work independently and can be assembled into different applications. This lowers barriers for researchers and developers worldwide.
+  link: Why this changes medical technology
+  diagram:
+    caption: Components, not monoliths
+    row1: [Sensing, Interpretation, User experience]
+    row2: [Data, Shared semantics, Human expertise]  # the middle box is highlighted
+    result: A complete, functioning system ↗
+
+strip:
+  strong: We are building a movement, not a central platform company.
+  text: Independent. Open. Forkable. Interoperable by design.
+
+project:
+  label: The first research project
+  title: One <em>functional</em> end-to-end proof.
+  intro: We aim to show that independent components can be assembled into a complete diagnostic application.
+  device:
+    label: The Device
+    title: One tablet.<br>Many diagnoses.
+    text: A multimodal Android platform uses camera, audio and touchscreen. An ultrasound probe is the first external extension. Two distinct diagnostic tasks, multiple user roles and replaceable modules demonstrate the architecture.
+    link: Explore the technical demonstrator
+    diagram_label: "Abstract diagram: independently developed modules connect into one platform"
+
+outreach:
+  label: Global outreach
+  title: 1,000 devices.<br><span style="color:var(--lime)">1,000 villages.</span>
+  text: A concrete call for the Global South — and a starting point for field experience, connections and the knowledge of international research and development teams.
+  button: Explore 1,000 Villages
+
+join:
+  label: Get involved
+  title: Knowledge is distributed worldwide.<br>Development should be, too.
+  button: Start collaborating

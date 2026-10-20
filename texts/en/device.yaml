@@ -1,0 +1,72 @@
+# "The Device" page. Texts may contain simple HTML: <br> (line break), <em> (emphasis).
+meta:
+  title: The Device – Multimodal Diagnostic Platform | Modular MedTech
+  description: "The Device: an Android tablet, ultrasound and AI as the first proof of a composable multimodal diagnostic platform."
+
+hero:
+  label: The first research project
+  title: One tablet. <span class="hi">Many medical capabilities.</span>
+  text: A multimodal diagnostic platform built from a standard Android tablet, an ultrasound probe and AI-assisted software. Our first proof of modular architecture.
+
+platform:
+  label: What we are building
+  title: A platform, not another ultrasound machine.
+  paragraphs:
+    - The tablet uses its camera, microphone, audio and touchscreen. External sensors extend its medical capabilities; ultrasound is the first addition. ECG, EEG and other modalities may follow.
+    - Hardware interfaces, data processing, interpretation, user experience and human expertise are developed as independent modules.
+  diagram:
+    caption: Components, not monoliths
+    row1: [Sensing, Interpretation, User experience]
+    row2: [Data, Shared semantics, Human expertise]  # the middle box is highlighted
+    result: A complete, functioning system ↗
+
+theses:
+  label: Why we are doing this
+  title: Two theses. <em>One demonstrator.</em>
+  items:
+    - number: "01"
+      title: Medicine from First Principles
+      text: We start with the medical task, not with existing device categories. For selected clinical questions, for example, we investigate whether AI-assisted ultrasound can replace conventional X-ray imaging.
+    - number: "02"
+      title: Proving Composability
+      text: We demonstrate that independently developed modules can form a fully functional system — and then be reused, replaced and extended.
+
+usecase:
+  label: The concrete end-to-end proof
+  title: Diagnosis is our <em>first use case.</em>
+  intro: Diagnostic assessment is easier to define than treatment or therapy, yet already provides practical value. Treatment may be added later.
+  columns:
+    - label: Two diagnostic questions
+      rows:
+        - { marker: A, text: Fractures — selected clinical questions using AI-assisted ultrasound }
+        - { marker: B, text: Lung and pleural examinations — a different diagnostic context }
+      note: Both use cases are research proposals to be evaluated in appropriate clinical settings, not already validated substitutes for established procedures.
+    - label: Multiple user roles
+      rows:
+        - { marker: "01", text: Physician-oriented interface }
+        - { marker: "02", text: Nursing and emergency-service workflows }
+        - { marker: "03", text: Further roles depending on the specific setting }
+      note: User guidance and professional authorization are distinct. The modules share the same diagnostic capabilities.
+
+strategy:
+  label: Development strategy
+  title: First, make it work. <em>Then make it replaceable.</em>
+  steps:
+    - number: "01"
+      title: End-to-end proof
+      text: Assemble a complete diagnostic-assessment application from semantically described, independently developed modules.
+    - number: "02"
+      title: Reuse
+      text: Implement a second diagnostic question and several user interfaces using shared components.
+    - number: "03"
+      title: Substitutability
+      text: Replace at least one component with an independently developed implementation — without rewriting its consumers.
+    - number: "04"
+      title: Open continuation
+      text: Publish modules, models, interfaces and tests so other teams can develop additional applications.
+
+consortium:
+  label: The initial consortium
+  title: We are looking for people<br>who can <span style="color:var(--lime)">build it.</span>
+  text: Research teams in diagnostics, ultrasound and sensing, medical AI, ontologies, agent-assisted software development and user interaction. Independent partners collaborate on one functional end-to-end proof.
+  button: Join the research consortium

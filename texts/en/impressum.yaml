@@ -1,0 +1,32 @@
+# Legal notice. The contact e-mail is maintained centrally in src/_data/site.js.
+meta:
+  title: Legal notice | Modular MedTech
+  description: Legal notice and contact information for the website operator, The Gesamtschau Institute UG (haftungsbeschränkt).
+
+hero:
+  label: Legal information
+  title: Legal notice.
+  text: Information about the organization legally responsible for this website.
+
+provider:
+  title: Provider
+  name: The Gesamtschau Institute UG (haftungsbeschränkt)
+  address:
+    - Ippendorfer Allee 31
+    - 53127 Bonn
+    - Germany
+
+register:
+  title: Commercial register
+  lines:
+    - "Register court: Bonn Local Court (Amtsgericht Bonn)"
+    - "Registration number: HRB 23234"
+
+vat:
+  title: VAT identification number
+  number: DE318430297
+
+management:
+  title: Managing director and editorial responsibility
+  name: Alexander Markowetz
+  editorial: "Responsible for journalistic and editorial content: Alexander Markowetz."

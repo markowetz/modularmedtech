@@ -1,0 +1,62 @@
+{% extends "base.njk" %}
+{% from "macros.njk" import arrow, pageHero %}
+
+{#- Paragraph list: plain strings, or { highlight: "..." } for emphasised key statements. -#}
+{% macro paragraphs(list) %}
+{%- for p in list %}
+<p{% if p.highlight %} class="highlight">{{ p.highlight }}{% else %}>{{ p }}{% endif %}</p>
+{%- endfor %}
+{% endmacro %}
+
+{% block main %}
+{%- set s = t.sections -%}
+{{ pageHero(t.hero, trace=true) }}
+
+<section class="section">
+  <div class="wrap content-layout">
+    <aside class="toc" aria-label="{{ t.toc.aria_label | escape }}">
+      <div class="eyebrow">{{ t.toc.title }}</div>
+      {%- for link in t.toc.links %}
+      <a href="#{{ link.anchor }}">{{ link.label }}</a>
+      {%- endfor %}
+    </aside>
+    <div class="prose">
+      <section id="vision">
+        <div class="eyebrow" style="color:#668068;margin-bottom:18px">{{ s.vision.label }}</div>
+        <h2>{{ s.vision.title }}</h2>
+        <h3>{{ s.vision.mission_title }}</h3>
+        {{ paragraphs(s.vision.paragraphs) }}
+      </section>
+
+      {%- for id in ["situation", "problem", "loesung"] %}
+      <section id="{{ id }}">
+        <div class="eyebrow" style="color:#668068;margin-bottom:17px">{{ s[id].label }}</div>
+        <h2>{{ s[id].title }}</h2>
+        {{ paragraphs(s[id].paragraphs) }}
+      </section>
+      {%- endfor %}
+
+      <section id="prinzipien">
+        <div class="eyebrow" style="color:#668068;margin-bottom:17px">{{ s.prinzipien.label }}</div>
+        <h2>{{ s.prinzipien.title }}</h2>
+        <div class="principle-grid">
+          {%- for item in s.prinzipien.principles %}
+          <article class="principle">
+            <span class="principle-num">{% if loop.index < 10 %}0{% endif %}{{ loop.index }} / {% if loop.length < 10 %}0{% endif %}{{ loop.length }}</span>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.text }}</p>
+          </article>
+          {%- endfor %}
+        </div>
+      </section>
+
+      <section id="bewegung">
+        <div class="eyebrow" style="color:#668068;margin-bottom:17px">{{ s.bewegung.label }}</div>
+        <h2>{{ s.bewegung.title }}</h2>
+        {{ paragraphs(s.bewegung.paragraphs) }}
+        <a class="btn btn-ink" href="mitmachen.html">{{ s.bewegung.button }} {{ arrow() }}</a>
+      </section>
+    </div>
+  </div>
+</section>
+{% endblock %}

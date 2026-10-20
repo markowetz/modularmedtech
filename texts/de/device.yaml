@@ -1,0 +1,72 @@
+# Seite „The Device“. Texte dürfen einfaches HTML enthalten: <br> (Zeilenumbruch), <em> (hervorgehoben).
+meta:
+  title: The Device – Multimodale Diagnoseplattform | Modular MedTech
+  description: "The Device: ein multimodales Android-Tablet mit Ultraschall und KI als erster Demonstrator der modularen Architektur."
+
+hero:
+  label: Das erste Forschungsprojekt
+  title: Ein Tablet. <span class="hi">Viele medizinische Fähigkeiten.</span>
+  text: Eine multimodale Diagnoseplattform aus einem handelsüblichen Android-Tablet, Ultraschallsonde und KI-gestützter Software. Sie ist der erste Beweis für unsere modulare Architektur.
+
+platform:
+  label: Was wir bauen
+  title: Eine Plattform, kein neues Ultraschallgerät.
+  paragraphs:
+    - Das Tablet nutzt Kamera, Mikrofon, Audio und Touchscreen. Externe Sensoren erweitern die medizinischen Fähigkeiten; die Ultraschallsonde ist der erste Zusatz. Später können EKG, EEG und weitere Verfahren folgen.
+    - Hardwareanbindung, Datenverarbeitung, Interpretation, Benutzerführung und menschliche Expertise werden als voneinander unabhängige Module entwickelt.
+  diagram:
+    caption: Baukasten statt Monolith
+    row1: [Sensorik, Interpretation, Benutzerführung]
+    row2: [Daten, Gemeinsame Semantik, Menschliche Expertise]  # das mittlere Feld ist hervorgehoben
+    result: Ein funktionsfähiges Gesamtsystem ↗
+
+theses:
+  label: Warum wir das tun
+  title: Zwei Thesen. <em>Ein Demonstrator.</em>
+  items:
+    - number: "01"
+      title: Medizin aus First Principles
+      text: Wir beginnen mit der medizinischen Aufgabe statt mit bestehenden Gerätekategorien. Bei ausgewählten Fragestellungen untersuchen wir etwa, ob KI-gestützter Ultraschall konventionelles Röntgen ersetzen kann.
+    - number: "02"
+      title: Komponierbarkeit beweisen
+      text: Wir zeigen, dass unabhängig entwickelte Module zu einem vollständig funktionierenden Gesamtsystem werden – und sich anschließend wiederverwenden, ersetzen und erweitern lassen.
+
+usecase:
+  label: Der konkrete Durchstich
+  title: Diagnostik ist unser <em>erster Anwendungsfall.</em>
+  intro: Befundung ist im Vergleich zu Behandlung und Therapie einfacher abzugrenzen und bietet bereits praktischen Nutzen. Behandlung kann später hinzukommen.
+  columns:
+    - label: Zwei diagnostische Fragestellungen
+      rows:
+        - { marker: A, text: Frakturen – ausgewählte Fragestellungen mit KI-gestütztem Ultraschall }
+        - { marker: B, text: Lungen- und Pleurauntersuchungen – anderer diagnostischer Kontext }
+      note: Beide Anwendungsfälle sind Forschungsvorhaben und werden in geeigneten klinischen Settings geprüft, nicht als bereits validierte Ersatzverfahren dargestellt.
+    - label: Mehrere Benutzerrollen
+      rows:
+        - { marker: "01", text: Ärztliche Benutzerführung }
+        - { marker: "02", text: Pflege- und Rettungsdienst-Workflows }
+        - { marker: "03", text: Weitere Rollen abhängig vom konkreten Einsatz }
+      note: Benutzerführung und fachliche Befugnis sind zu unterscheiden. Die Module verwenden gemeinsame diagnostische Fähigkeiten.
+
+strategy:
+  label: Entwicklungsstrategie
+  title: Erst vollständig. <em>Dann austauschbar.</em>
+  steps:
+    - number: "01"
+      title: Durchstich
+      text: Eine vollständige Befundungsanwendung aus semantisch beschriebenen, unabhängig entwickelten Modulen zusammensetzen.
+    - number: "02"
+      title: Wiederverwendung
+      text: Eine zweite diagnostische Fragestellung und mehrere Benutzerführungen mit gemeinsamen Komponenten realisieren.
+    - number: "03"
+      title: Austauschbarkeit
+      text: Mindestens eine Komponente durch eine unabhängige Implementierung ersetzen – ohne ihre Verbraucher umzuschreiben.
+    - number: "04"
+      title: Offene Weiterarbeit
+      text: Module, Modelle, Schnittstellen und Tests veröffentlichen, sodass andere Teams weitere Anwendungen entwickeln können.
+
+consortium:
+  label: Das initiale Konsortium
+  title: Wir suchen die Menschen,<br>die es <span style="color:var(--lime)">bauen können.</span>
+  text: Forschungsteams für Diagnostik, Ultraschall und Sensorik, medizinische KI, Ontologien, agentengestützte Softwareentwicklung und Benutzerinteraktion. Unabhängige Partner entwickeln einen gemeinsamen funktionalen Durchstich.
+  button: Am Konsortium mitarbeiten

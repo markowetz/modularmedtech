@@ -1,0 +1,74 @@
+{% extends "base.njk" %}
+{% from "macros.njk" import arrow, pageHero %}
+{% block main %}
+{{ pageHero(t.hero, trace=true) }}
+
+<section class="section" style="background:#e7ece4">
+  <div class="wrap">
+    <div class="eyebrow" style="color:#4e7156">{{ t.goal.label }}</div>
+    <div class="big-number" style="color:#1b382c">{{ t.goal.number }}</div>
+    <div class="intro-block" style="gap:50px">
+      <div><h2 style="margin:0;font-size:clamp(2rem,4vw,4rem);letter-spacing:-.06em;line-height:1.11">{{ t.goal.title }}</h2></div>
+      <div><p style="font-size:1.12rem;line-height:1.75;color:#506559">{{ t.goal.text }}</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow"><span class="dash"></span>{{ t.purpose.label }}</div>
+      <div>
+        <h2>{{ t.purpose.title }}</h2>
+        <p class="section-intro">{{ t.purpose.intro }}</p>
+      </div>
+    </div>
+    <div class="route-steps">
+      {%- for step in t.purpose.steps %}
+      <article class="route-step">
+        <div class="step">{{ step.number }}</div>
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.text }}</p>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="statement">
+  <div class="wrap statement-grid">
+    <div class="eyebrow">{{ t.ambition.label }}</div>
+    <blockquote>{{ t.ambition.quote }}</blockquote>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two-col">
+    <div class="copy">
+      <div class="eyebrow" style="color:#5b8068;margin-bottom:20px">{{ t.cocreation.label }}</div>
+      <h3>{{ t.cocreation.title }}</h3>
+      {%- for paragraph in t.cocreation.paragraphs %}
+      <p>{{ paragraph }}</p>
+      {%- endfor %}
+    </div>
+    <div class="stack">
+      {%- for card in t.cocreation.cards %}
+      <div class="number-card" style="min-height:0">
+        <div class="eyebrow">{{ card.label }}</div>
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.text }}</p>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="callout">
+  <div class="wrap">
+    <div class="eyebrow">{{ t.callout.label }}</div>
+    <h2>{{ t.callout.title }}</h2>
+    <p>{{ t.callout.text }}</p>
+    <a class="btn btn-lime" href="mitmachen.html">{{ t.callout.button }} {{ arrow() }}</a>
+  </div>
+</section>
+{% endblock %}

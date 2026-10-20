@@ -1,0 +1,40 @@
+{% extends "base.njk" %}
+{% from "macros.njk" import arrow, pageHero %}
+{% block main %}
+{{ pageHero(t.hero, trace=true) }}
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow"><span class="dash"></span>{{ t.ways.label }}</div>
+      <div>
+        <h2>{{ t.ways.title }}</h2>
+        <p class="section-intro">{{ t.ways.intro }}</p>
+      </div>
+    </div>
+    <div class="participate-grid">
+      {%- for item in t.ways.items %}
+      <article class="participate">
+        <div class="index">{{ item.number }}</div>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+        <a class="tag-link" href="mailto:{{ site.email }}?subject={{ item.subject | urlencode }}">{{ t.ways.link }} {{ arrow() }}</a>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" style="background:#e7ece4">
+  <div class="wrap two-col">
+    <div>
+      <div class="eyebrow" style="color:#557760">{{ t.contact.label }}</div>
+      <h2 style="font-size:clamp(1.9rem,3.3vw,3.2rem);letter-spacing:-.06em;margin:20px 0">{{ t.contact.title }}</h2>
+    </div>
+    <div>
+      <p>{{ t.contact.text }}</p>
+      <a href="mailto:{{ site.email }}?subject={{ t.contact.subject | urlencode }}" style="font-size:1.2rem;font-weight:700;text-decoration-thickness:1px;text-underline-offset:5px">{{ site.email }} ↗</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

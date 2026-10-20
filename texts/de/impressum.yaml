@@ -1,0 +1,32 @@
+# Impressum. Die Kontakt-E-Mail wird zentral in src/_data/site.js gepflegt.
+meta:
+  title: Impressum | Modular MedTech
+  description: "Impressum der Modular MedTech Website: The Gesamtschau Institute UG (haftungsbeschränkt), Bonn."
+
+hero:
+  label: Rechtliche Angaben
+  title: Impressum.
+  text: Angaben zum verantwortlichen Anbieter dieser Website.
+
+provider:
+  title: Anbieter
+  name: The Gesamtschau Institute UG (haftungsbeschränkt)
+  address:
+    - Ippendorfer Allee 31
+    - 53127 Bonn
+    - Deutschland
+
+register:
+  title: Registereintrag
+  lines:
+    - "Registergericht: Amtsgericht Bonn"
+    - "Registernummer: HRB 23234"
+
+vat:
+  title: Umsatzsteuer-Identifikationsnummer
+  number: DE318430297
+
+management:
+  title: Geschäftsführung und inhaltliche Verantwortung
+  name: Alexander Markowetz
+  editorial: "Verantwortlich für journalistisch-redaktionelle Inhalte: Alexander Markowetz."

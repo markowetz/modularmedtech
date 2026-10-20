@@ -1,0 +1,25 @@
+{% extends "base.njk" %}
+{% from "macros.njk" import pageHero %}
+{% block main %}
+{{ pageHero(t.hero, trace=false) }}
+
+<section class="section">
+  <div class="wrap legal">
+    <h2>{{ t.provider.title }}</h2>
+    <p class="big-legal">{{ t.provider.name }}</p>
+    <p>{{ t.provider.address | join("<br>") }}</p>
+    <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+
+    <h2>{{ t.register.title }}</h2>
+    <p>{{ t.register.lines | join("<br>") }}</p>
+
+    <h2>{{ t.vat.title }}</h2>
+    <p>{{ t.vat.number }}</p>
+
+    <h2>{{ t.management.title }}</h2>
+    <p>{{ t.management.name }}<br><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <p class="small-note">{{ t.management.editorial }}</p>
+
+  </div>
+</section>
+{% endblock %}

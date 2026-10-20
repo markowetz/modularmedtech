@@ -1,0 +1,39 @@
+# Seite „Mitmachen“. Texte dürfen einfaches HTML enthalten: <br> (Zeilenumbruch), <em> (hervorgehoben).
+# „subject“ ist der Betreff der E-Mail, die beim Klick auf den Kontaktlink geöffnet wird.
+meta:
+  title: Mitmachen | Modular MedTech
+  description: "Zusammenarbeit bei Modular MedTech: Forschende, Entwickler, lokale Partner und Unterstützer für das Device und 1,000 Villages."
+
+hero:
+  label: Zusammenarbeit
+  title: Es gibt viele Wege, <span class="hi">mitzubauen.</span>
+  text: Modular MedTech lebt von unabhängigem Wissen und der Bereitschaft, es zu teilen. Wir freuen uns über konkrete Ideen, Fähigkeiten und Kontakte.
+
+ways:
+  label: Mitmachen
+  title: Wo möchtest du <em>beitragen?</em>
+  intro: Wähle den passenden Einstieg. Jede Anfrage führt direkt zur Kontaktadresse der Initiative – ohne Konto oder Webformular.
+  link: Kontakt aufnehmen
+  items:
+    - number: 01 / JOIN THE MOVEMENT
+      title: Forschung & Entwicklung
+      text: Wir suchen medizinische, ingenieurwissenschaftliche und informatische Forschungsteams für den ersten Demonstrator.
+      subject: Modular MedTech – Forschungskooperation
+    - number: 02 / JOIN THE MOVEMENT
+      title: Lokale Partner
+      text: Einrichtungen und Initiativen, die praktische Erfahrungen, Anforderungen und Partnerkontakte in ihren Regionen einbringen.
+      subject: Modular MedTech – Lokale Partnerschaft
+    - number: 03 / JOIN THE MOVEMENT
+      title: Internationale Netzwerke
+      text: Organisationen, Hochschulen und Entwicklergemeinschaften, die weitere Teams für das offene Ökosystem gewinnen.
+      subject: Modular MedTech – Internationale Zusammenarbeit
+    - number: 04 / JOIN THE MOVEMENT
+      title: Förderung & Unterstützung
+      text: Stiftungen, Unternehmen und öffentliche Akteure, die Forschung, offene Infrastruktur oder Outreach unterstützen möchten.
+      subject: Modular MedTech – Foerderung und Partnerschaft
+
+contact:
+  label: Direkter Kontakt
+  title: Eine konkrete Idee<br>ist der beste Anfang.
+  text: Beschreibe kurz, welche Fragestellung, Erfahrung oder technische Fähigkeit du einbringen möchtest. Wir haben noch keine formale Mitgliedschaft oder geschlossene Aufnahmeorganisation.
+  subject: Modular MedTech – Zusammenarbeit

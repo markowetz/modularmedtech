@@ -1,0 +1,111 @@
+{% extends "base.njk" %}
+{% from "macros.njk" import arrow %}
+{% block main %}
+<section class="hero hero-landing">
+  <div class="hero-orbit"><svg aria-hidden="true" fill="none" viewbox="0 0 600 600"><g opacity=".6" stroke="#a8f198" stroke-width="1"><circle cx="300" cy="300" r="245"></circle><circle cx="300" cy="300" r="192"></circle><circle cx="300" cy="300" r="136"></circle><circle cx="300" cy="300" r="80"></circle><path d="M300 0v600M0 300h600M88 88l424 424M512 88 88 512"></path></g><g fill="#10251e" stroke="#dffc93" stroke-width="3"><circle cx="300" cy="55" r="10"></circle><circle cx="492" cy="300" r="10"></circle><circle cx="300" cy="436" r="10"></circle><circle cx="108" cy="300" r="10"></circle><circle cx="244" cy="244" r="10"></circle><circle cx="396" cy="396" r="10"></circle></g><g stroke="#dffc93" stroke-width="2"><path d="M300 55 244 244 108 300 300 436 396 396 492 300"></path><path d="M244 244 396 396 492 300"></path></g></svg></div>
+  <div class="wrap">
+    <div class="eyebrow hero-kicker"><span class="dash"></span>{{ t.hero.kicker }}</div>
+    <h1>{{ t.hero.title }}</h1>
+    <p class="hero-copy">{{ t.hero.copy }}</p>
+    <div class="hero-actions">
+      <a class="btn btn-lime" href="manifest.html">{{ t.hero.button_manifest }} {{ arrow() }}</a>
+      <a class="btn btn-outline-light" href="mitmachen.html">{{ t.hero.button_join }} {{ arrow() }}</a>
+    </div>
+  </div>
+  <div class="hero-foot"><div class="wrap">{% for item in t.hero.keywords %}<span>{{ item }}</span>{% endfor %}</div></div>
+</section>
+
+<section class="statement">
+  <div class="wrap statement-grid">
+    <div class="eyebrow">{{ t.mission.label }}</div>
+    <blockquote>{{ t.mission.quote }}</blockquote>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow"><span class="dash"></span>{{ t.blocks.label }}</div>
+      <div>
+        <h2>{{ t.blocks.title }}</h2>
+        <p class="section-intro">{{ t.blocks.intro }}</p>
+      </div>
+    </div>
+    <div class="feature-grid">
+      {%- for item in t.blocks.items %}
+      <article class="feature{% if item.style %} {{ item.style }}{% endif %}">
+        <div class="num">{{ item.number }}</div>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+        <a class="feature-link" href="{{ item.page }}.html">{{ item.link }} <span>↗</span></a>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap two-col">
+    <div class="copy">
+      <div class="eyebrow" style="color:#5b8068;margin-bottom:25px">{{ t.thesis.label }}</div>
+      <h3>{{ t.thesis.title }}</h3>
+      {%- for paragraph in t.thesis.paragraphs %}
+      <p>{{ paragraph }}</p>
+      {%- endfor %}
+      <a class="tag-link" href="manifest.html">{{ t.thesis.link }} {{ arrow() }}</a>
+    </div>
+    <div class="vis-composition">
+      <div class="vis-caption">{{ t.thesis.diagram.caption }}</div>
+      <div class="module-row">{% for m in t.thesis.diagram.row1 %}<div class="module">{{ m }}</div>{% endfor %}</div>
+      <div class="vertical-line"></div>
+      <div class="module-row"><div class="module">{{ t.thesis.diagram.row2[0] }}</div><div class="module central">{{ t.thesis.diagram.row2[1] }}</div><div class="module">{{ t.thesis.diagram.row2[2] }}</div></div>
+      <div class="vertical-line"></div>
+      <div class="system">{{ t.thesis.diagram.result }}</div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap strip-inner"><strong>{{ t.strip.strong }}</strong><span>{{ t.strip.text }}</span></div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow"><span class="dash"></span>{{ t.project.label }}</div>
+      <div>
+        <h2>{{ t.project.title }}</h2>
+        <p class="section-intro">{{ t.project.intro }}</p>
+      </div>
+    </div>
+    <div class="intro-block">
+      <div>
+        <div class="eyebrow" style="color:#668268;margin-bottom:20px">{{ t.project.device.label }}</div>
+        <h2>{{ t.project.device.title }}</h2>
+        <p>{{ t.project.device.text }}</p>
+        <a class="tag-link" href="device.html">{{ t.project.device.link }} {{ arrow() }}</a>
+      </div>
+      <div class="line-art" role="img" aria-label="{{ t.project.device.diagram_label | escape }}"><svg fill="none" viewbox="0 0 600 270"><g stroke="#a0b8a2" stroke-width="1.5"><path d="M65 60H515M65 120H515M65 180H515M65 240H515M105 20V250M205 20V250M305 20V250M405 20V250M505 20V250" stroke-dasharray="4 9"></path></g><g stroke="#37644d" stroke-width="3"><path d="M105 60h110v60h90v60h100v-60h90"></path><path d="M105 180h90v-60h110v-60h100"></path></g><g fill="#f9f9f0" stroke="#37644d" stroke-width="3"><rect height="60" width="60" x="75" y="30"></rect><rect height="60" width="60" x="175" y="90"></rect><rect height="60" width="60" x="275" y="30"></rect><rect height="60" width="60" x="375" y="150"></rect><rect height="60" width="60" x="475" y="90"></rect></g><rect fill="#d7f777" height="60" stroke="#37644d" stroke-width="3" width="60" x="275" y="30"></rect><g fill="#37644d"><circle cx="105" cy="60" r="6"></circle><circle cx="205" cy="120" r="6"></circle><circle cx="305" cy="60" r="6"></circle><circle cx="405" cy="180" r="6"></circle><circle cx="505" cy="120" r="6"></circle></g></svg></div>
+    </div>
+  </div>
+</section>
+
+<section class="callout">
+  <div class="wrap">
+    <div class="eyebrow">{{ t.outreach.label }}</div>
+    <h2>{{ t.outreach.title }}</h2>
+    <p>{{ t.outreach.text }}</p>
+    <a class="btn btn-lime" href="villages.html">{{ t.outreach.button }} {{ arrow() }}</a>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap strip-inner">
+    <div>
+      <div class="eyebrow" style="color:#5b8068;margin-bottom:8px">{{ t.join.label }}</div>
+      <h2 style="font-size:clamp(1.8rem,3vw,3rem);margin:0;letter-spacing:-.055em">{{ t.join.title }}</h2>
+    </div>
+    <a class="btn btn-ink" href="mitmachen.html">{{ t.join.button }} {{ arrow() }}</a>
+  </div>
+</section>
+{% endblock %}

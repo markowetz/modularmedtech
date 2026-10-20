@@ -1,0 +1,87 @@
+{% extends "base.njk" %}
+{% from "macros.njk" import arrow, pageHero %}
+{% block main %}
+{{ pageHero(t.hero, trace=true) }}
+
+<section class="section">
+  <div class="wrap intro-block">
+    <div>
+      <div class="eyebrow" style="color:#60836d;margin-bottom:21px">{{ t.platform.label }}</div>
+      <h2>{{ t.platform.title }}</h2>
+      {%- for paragraph in t.platform.paragraphs %}
+      <p>{{ paragraph }}</p>
+      {%- endfor %}
+    </div>
+    <div class="vis-composition">
+      <div class="vis-caption">{{ t.platform.diagram.caption }}</div>
+      <div class="module-row">{% for m in t.platform.diagram.row1 %}<div class="module">{{ m }}</div>{% endfor %}</div>
+      <div class="vertical-line"></div>
+      <div class="module-row"><div class="module">{{ t.platform.diagram.row2[0] }}</div><div class="module central">{{ t.platform.diagram.row2[1] }}</div><div class="module">{{ t.platform.diagram.row2[2] }}</div></div>
+      <div class="vertical-line"></div>
+      <div class="system">{{ t.platform.diagram.result }}</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:#e7ece4">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow"><span class="dash"></span>{{ t.theses.label }}</div>
+      <div><h2>{{ t.theses.title }}</h2></div>
+    </div>
+    <div class="number-cards" style="grid-template-columns:repeat(2,1fr)">
+      {%- for item in t.theses.items %}
+      <article class="number-card"><div class="big">{{ item.number }}</div><h3>{{ item.title }}</h3><p>{{ item.text }}</p></article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow"><span class="dash"></span>{{ t.usecase.label }}</div>
+      <div>
+        <h2>{{ t.usecase.title }}</h2>
+        <p class="section-intro">{{ t.usecase.intro }}</p>
+      </div>
+    </div>
+    <div class="two-col">
+      {%- for column in t.usecase.columns %}
+      <div>
+        <div class="eyebrow" style="color:#60836d;margin-bottom:17px">{{ column.label }}</div>
+        <div class="kicker-list">
+          {%- for row in column.rows %}
+          <div class="kicker-row"><span>{{ row.marker }}</span><strong>{{ row.text }}</strong></div>
+          {%- endfor %}
+        </div>
+        <p class="small-note">{{ column.note }}</p>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow"><span class="dash"></span>{{ t.strategy.label }}</div>
+      <div><h2>{{ t.strategy.title }}</h2></div>
+    </div>
+    <div class="method-list">
+      {%- for step in t.strategy.steps %}
+      <div class="method-item"><div class="num">{{ step.number }}</div><h3>{{ step.title }}</h3><p>{{ step.text }}</p></div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="callout">
+  <div class="wrap">
+    <div class="eyebrow">{{ t.consortium.label }}</div>
+    <h2>{{ t.consortium.title }}</h2>
+    <p>{{ t.consortium.text }}</p>
+    <a class="btn btn-lime" href="mitmachen.html">{{ t.consortium.button }} {{ arrow() }}</a>
+  </div>
+</section>
+{% endblock %}

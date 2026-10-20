@@ -1,0 +1,57 @@
+# "1,000 Villages" page. Texts may contain simple HTML: <br> (line break), <em> (emphasis).
+meta:
+  title: 1,000 Villages – One Device per Village | Modular MedTech
+  description: "1,000 Villages: the call for 1,000 diagnostic devices in 1,000 villages in the Global South, connecting people and knowledge."
+
+hero:
+  label: International outreach initiative
+  title: 1,000 Villages.<br><span class="hi">One Device per Village.</span>
+  text: "Our call: 1,000 diagnostic platforms — each comprising a tablet and an ultrasound probe — for 1,000 villages in the Global South."
+
+goal:
+  label: A concrete goal for a global movement
+  number: "1,000"
+  title: devices.<br>1,000 villages.
+  text: "One tablet, one ultrasound probe and modular diagnostic software. This is an international call and outreach initiative: an ambition, not a funded or committed delivery programme."
+
+purpose:
+  label: What it is about
+  title: More than distribution. <em>Connection.</em>
+  intro: The device is a tangible starting point for relationships, practical experience and an international community of researchers and developers.
+  steps:
+    - number: 01 / MAKE IT VISIBLE
+      title: Communicate
+      text: A tangible demand shows what Modular MedTech stands for and whom the movement aims to reach.
+    - number: 02 / CONNECT LOCALLY
+      title: Connect
+      text: Bring together medical facilities, researchers, developers and local initiatives.
+    - number: 03 / LEARN IN THE FIELD
+      title: Learn
+      text: Gain real-world experience, feedback and insight into needs previously overlooked.
+    - number: 04 / BUILD TOGETHER
+      title: Co-develop
+      text: International partners contribute as developers of independent modules and applications.
+
+ambition:
+  label: Our ambition
+  quote: We do not merely take technology into the world. We want to mobilize the world’s knowledge to develop new technology.
+
+cocreation:
+  label: Global co-creation
+  title: Local partners are more than users.
+  paragraphs:
+    - They know medical needs, resources and real workflows from direct experience. Their feedback should generate new research questions and components.
+    - The open architecture makes it possible to reuse locally developed capabilities around the world.
+  cards:
+    - label: For local organizations
+      title: Make your needs visible
+      text: We are looking for partners who can facilitate real-world use, feedback and local collaboration.
+    - label: For research & development
+      title: Become a co-developer
+      text: International teams can extend modules, investigate their own ideas and build new applications.
+
+callout:
+  label: An initiative taking shape
+  title: 1,000 places of use.<br><span style="color:var(--lime)">One growing network.</span>
+  text: We seek organizations in the Global South, research groups, foundations and partners who want to help shape this initiative.
+  button: Become a partner

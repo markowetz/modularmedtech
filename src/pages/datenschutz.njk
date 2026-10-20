@@ -1,0 +1,18 @@
+{% extends "base.njk" %}
+{% from "macros.njk" import pageHero %}
+{% block main %}
+{{ pageHero(t.hero, trace=false) }}
+
+<section class="section">
+  <div class="wrap legal">
+    <div class="notice"><strong>{{ t.notice.strong }}</strong> {{ t.notice.text }}</div>
+    <h2>{{ t.controller.title }}</h2>
+    <p>{% for line in t.controller.address %}{{ line }}<br>{% endfor %}<a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    {%- for section in t.sections %}
+    <h2>{{ section.title }}</h2>
+    <p>{{ section.text }}</p>
+    {%- endfor %}
+    <p class="small-note">{{ t.status }}</p>
+  </div>
+</section>
+{% endblock %}

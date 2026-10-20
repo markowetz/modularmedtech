@@ -1,0 +1,81 @@
+# Startseite. Texte dürfen einfaches HTML enthalten: <br> (Zeilenumbruch), <em> (hervorgehoben).
+meta:
+  title: Offene Medizintechnik gemeinsam entwickeln | Modular MedTech
+  description: "Modular MedTech: Manifest, modulare Diagnoseplattform und 1,000 Villages – eine globale Bewegung für wiederverwendbare Medizintechnik."
+
+hero:
+  kicker: Eine offene globale Bewegung
+  title: Medizintechnik.<br><span class="serif">Neu</span> <span class="accent">denken.</span><br>Gemeinsam bauen.
+  copy: Wir ersetzen geschlossene, vertikal integrierte Softwareprodukte durch ein offenes Ökosystem wiederverwendbarer medizinischer Fähigkeiten.
+  button_manifest: Unser Manifest
+  button_join: Teil der Bewegung werden
+  keywords:
+    - OFFENE SEMANTIK
+    - REKOMBINIERBARE FÄHIGKEITEN
+    - GLOBALE ZUSAMMENARBEIT
+
+mission:
+  label: Unsere Mission
+  quote: Medizinische Fähigkeiten für alle Menschen erreichbar machen – indem mehr Menschen Medizintechnik entwickeln können.
+
+blocks:
+  label: Drei Bausteine
+  title: Eine Idee. <em>Zwei konkrete Initiativen.</em>
+  intro: Das Manifest formuliert unseren Ansatz. The Device macht ihn technisch überprüfbar. 1,000 Villages baut das internationale Netzwerk auf.
+  items:
+    - number: 01 / DIE IDEE
+      title: Das<br>Manifest.
+      text: Warum wir Medizintechnik anders entwickeln müssen – und welche zehn Prinzipien uns verbinden.
+      link: Manifest lesen
+      page: manifest
+    - number: 02 / DER NACHWEIS
+      title: The<br>Device.
+      text: Tablet, Ultraschall und KI. Ein funktionsfähiges Diagnosesystem aus unabhängig kombinierbaren Modulen.
+      link: Das Projekt entdecken
+      page: device
+      style: dark
+    - number: 03 / DIE BEWEGUNG
+      title: 1,000<br>Villages.
+      text: 1.000 Geräte für 1.000 Dörfer im Globalen Süden. Für Vernetzung, Felderfahrung und Zusammenarbeit.
+      link: Initiative entdecken
+      page: villages
+      style: lime
+
+thesis:
+  label: Die zentrale These
+  title: Fähigkeiten statt<br>fertiger Produkte.
+  paragraphs:
+    - Traditionelle Medizinsoftware integriert zahlreiche Funktionen in vollständige Prozessketten für einzelne Anwendungsfälle. Dadurch ist schon die Erprobung einer einzelnen Idee aufwendig.
+    - Wir entwickeln kleine, semantisch beschriebene und unabhängig nutzbare Module, aus denen verschiedene Anwendungen entstehen. Das senkt Eintrittsbarrieren für Forschende und Entwickler weltweit.
+  link: Warum das die Medizin verändert
+  diagram:
+    caption: Baukasten statt Monolith
+    row1: [Sensorik, Interpretation, Benutzerführung]
+    row2: [Daten, Gemeinsame Semantik, Menschliche Expertise]  # das mittlere Feld ist hervorgehoben
+    result: Ein funktionsfähiges Gesamtsystem ↗
+
+strip:
+  strong: Wir entwickeln eine Bewegung, keine zentrale Plattformfirma.
+  text: Unabhängig. Offen. Forkbar. Gemeinsam interoperabel.
+
+project:
+  label: Das erste Forschungsprojekt
+  title: Ein <em>funktionierender</em> Durchstich.
+  intro: Wir wollen beweisen, dass sich unabhängige Komponenten zu einer vollständigen Diagnoseanwendung zusammensetzen lassen.
+  device:
+    label: The Device
+    title: Ein Tablet.<br>Viele Diagnosen.
+    text: Eine multimodale Android-Plattform nutzt Kamera, Audio und Touchscreen. Eine Ultraschallsonde ist die erste externe Erweiterung. Zwei unterschiedliche Untersuchungsaufgaben, mehrere Benutzerrollen und austauschbare Module demonstrieren die Architektur.
+    link: Zum technischen Demonstrator
+    diagram_label: "Abstraktes Diagramm: unterschiedliche Module verbinden sich zu einer Plattform"
+
+outreach:
+  label: Globaler Outreach
+  title: 1,000 devices.<br><span style="color:var(--lime)">1,000 villages.</span>
+  text: Eine konkrete Forderung für den Globalen Süden – und ein Ausgangspunkt, um praktische Erfahrungen, Kontakte und das Wissen internationaler Forschungs- und Entwicklerteams zu mobilisieren.
+  button: 1,000 Villages entdecken
+
+join:
+  label: Mitmachen
+  title: Das Wissen ist weltweit verteilt.<br>Die Entwicklung sollte es auch sein.
+  button: Zusammenarbeit starten
