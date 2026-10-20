@@ -1,18 +1,18 @@
 # "1,000 Villages" page. Texts may contain simple HTML: <br> (line break), <em> (emphasis).
 meta:
   title: 1,000 Villages – One Device per Village | Modular MedTech
-  description: "1,000 Villages: the call for 1,000 diagnostic devices in 1,000 villages in the Global South, connecting people and knowledge."
+  description: "1,000 Villages: the goal of 1,000 diagnostic devices in 1,000 villages in the Global South, connecting people and knowledge."
 
 hero:
   label: International outreach initiative
   title: 1,000 Villages.<br><span class="hi">One Device per Village.</span>
-  text: "Our call: 1,000 diagnostic platforms — each comprising a tablet and an ultrasound probe — for 1,000 villages in the Global South."
+  text: "Our goal: 1,000 diagnostic platforms — each comprising a tablet and an ultrasound probe — for 1,000 villages in the Global South."
 
 goal:
   label: A concrete goal for a global movement
   number: "1,000"
   title: devices.<br>1,000 villages.
-  text: "One tablet, one ultrasound probe and modular diagnostic software. This is an international call and outreach initiative: an ambition, not a funded or committed delivery programme."
+  text: One tablet, one ultrasound probe and modular diagnostic software. The initiative is taking shape — aiming to enable connections, field experience and joint development.
 
 purpose:
   label: What it is about
@@ -21,7 +21,7 @@ purpose:
   steps:
     - number: 01 / MAKE IT VISIBLE
       title: Communicate
-      text: A tangible demand shows what Modular MedTech stands for and whom the movement aims to reach.
+      text: A tangible goal shows what Modular MedTech stands for and whom the movement aims to reach.
     - number: 02 / CONNECT LOCALLY
       title: Connect
       text: Bring together medical facilities, researchers, developers and local initiatives.
@@ -53,5 +53,5 @@ cocreation:
 callout:
   label: An initiative taking shape
   title: 1,000 places of use.<br><span style="color:var(--lime)">One growing network.</span>
-  text: We seek organizations in the Global South, research groups, foundations and partners who want to help shape this initiative.
+  text: We seek organizations in the Global South, research groups and partners who want to help shape this initiative.
   button: Become a partner

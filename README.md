@@ -61,8 +61,5 @@ Status prüfen: Repository → Settings → Pages, oder `dig modularmedtech.org 
 - Kein Tracking, keine Cookies, keine externen Inhalte. Die Datenschutzerklärung beschreibt nur Hosting
   (GitHub Pages) und Kontakt per E-Mail. Werden später externe Dienste eingebunden, muss sie ergänzt werden.
 - Kontaktadresse: info@modularmedtech.org (`src/_data/site.js`).
-
-## Offene Punkte
-
-1. Aussagen zu Finanzierung und Umsetzung prüfen: 1,000 Villages ist als Aufruf/Vorschlag formuliert,
-   nicht als bereits finanziertes Programm.
+- 1,000 Villages wird als Ziel beschrieben, ohne Aussagen zu Kosten oder Finanzierung
+  (Umsetzung frühestens in rund einem Jahr, Stand Oktober 2026).

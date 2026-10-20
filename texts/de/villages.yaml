@@ -1,18 +1,18 @@
 # Seite „1,000 Villages“. Texte dürfen einfaches HTML enthalten: <br> (Zeilenumbruch), <em> (hervorgehoben).
 meta:
   title: 1,000 Villages – One Device per Village | Modular MedTech
-  description: "1,000 Geräte für 1,000 Dörfer im Globalen Süden: internationale Outreach- und Vernetzungsstrategie von Modular MedTech."
+  description: "1.000 Geräte für 1.000 Dörfer im Globalen Süden: internationale Outreach- und Vernetzungsstrategie von Modular MedTech."
 
 hero:
   label: Internationale Outreach-Initiative
   title: 1,000 Villages.<br><span class="hi">One Device per Village.</span>
-  text: "Unsere Forderung: 1.000 Diagnoseplattformen aus Tablet und Ultraschallsonde für 1.000 Dörfer im Globalen Süden."
+  text: "Unser Ziel: 1.000 Diagnoseplattformen aus Tablet und Ultraschallsonde für 1.000 Dörfer im Globalen Süden."
 
 goal:
   label: Ein konkretes Ziel für eine globale Bewegung
   number: "1,000"
   title: Geräte.<br>1.000 Dörfer.
-  text: Ein Tablet, eine Ultraschallsonde und modulare Diagnostiksoftware. Die Initiative ist als internationale Forderung und Outreach-Projekt angelegt – eine angestrebte Ausstattung, noch keine finanzierte oder zugesagte Lieferung.
+  text: Ein Tablet, eine Ultraschallsonde und modulare Diagnostiksoftware. Die Initiative befindet sich im Aufbau – mit dem Ziel, Vernetzung, Felderfahrung und gemeinsame Entwicklung zu ermöglichen.
 
 purpose:
   label: Worum es geht
@@ -21,7 +21,7 @@ purpose:
   steps:
     - number: 01 / SICHTBAR MACHEN
       title: Kommunizieren
-      text: Eine greifbare Forderung zeigt, wofür Modular MedTech steht und wen die Bewegung erreichen will.
+      text: Ein greifbares Ziel zeigt, wofür Modular MedTech steht und wen die Bewegung erreichen will.
     - number: 02 / VOR ORT SEIN
       title: Vernetzen
       text: Medizinische Einrichtungen, Forschende, Entwickler und lokale Initiativen zusammenbringen.
@@ -53,5 +53,5 @@ cocreation:
 callout:
   label: Eine Initiative im Aufbau
   title: Aus 1.000 Einsatzorten<br><span style="color:var(--lime)">wird ein Netzwerk.</span>
-  text: Wir suchen Organisationen im Globalen Süden, Forschungsgruppen, Stiftungen und Partner, die diese Initiative mitgestalten möchten.
+  text: Wir suchen Organisationen im Globalen Süden, Forschungsgruppen und Partner, die diese Initiative mitgestalten möchten.
   button: Partner werden
