@@ -60,6 +60,6 @@ Status prüfen: Repository → Settings → Pages, oder `dig modularmedtech.org 
 1. Impressumsangaben prüfen und ggf. weitere Kontaktwege (z. B. Telefon) ergänzen.
 2. Datenschutzhinweise (auf GitHub Pages angepasst) rechtlich prüfen lassen; die Texte sind keine Rechtsberatung.
 3. Verhältnis zwischen Bewegung und Website-Betreiberin klären (The Gesamtschau Institute UG
-   (haftungsbeschränkt), Ippendorfer Allee 31, 53127 Bonn) und die Kontaktadresse in `src/_data/site.js` prüfen.
+   (haftungsbeschränkt), Ippendorfer Allee 31, 53127 Bonn). Kontaktadresse: info@modularmedtech.org (`src/_data/site.js`).
 4. Aussagen zu Finanzierung und Umsetzung prüfen: 1,000 Villages ist als Aufruf/Vorschlag formuliert,
    nicht als bereits finanziertes Programm.

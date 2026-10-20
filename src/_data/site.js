@@ -3,6 +3,6 @@ export default {
   // Output folder and relative path back to the site root, per language.
   dir: { de: "", en: "en/" },
   root: { de: "", en: "../" },
-  email: "kontakt@markowetz.de",
+  email: "info@modularmedtech.org",
   url: "https://modularmedtech.org",
 };
