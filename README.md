@@ -16,7 +16,7 @@ _site/               Generierte Website (nicht bearbeiten, wird bei jedem Build 
 draft-v1/            Ursprünglicher Entwurf als Referenz
 ```
 
-Deutsche Seiten landen im Wurzelverzeichnis, englische unter `/en/`.
+Englische Seiten (Standardsprache) landen im Wurzelverzeichnis, deutsche unter `/de/`.
 
 ## Texte bearbeiten
 
