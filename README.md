@@ -55,11 +55,14 @@ Die Website läuft über **GitHub Pages** unter **https://modularmedtech.org**, 
 
 Status prüfen: Repository → Settings → Pages, oder `dig modularmedtech.org A`.
 
-## Offene Punkte (aus dem Entwurf übernommen)
+## Festlegungen
 
-1. Impressumsangaben prüfen und ggf. weitere Kontaktwege (z. B. Telefon) ergänzen.
-2. Datenschutzhinweise (auf GitHub Pages angepasst) rechtlich prüfen lassen; die Texte sind keine Rechtsberatung.
-3. Verhältnis zwischen Bewegung und Website-Betreiberin klären (The Gesamtschau Institute UG
-   (haftungsbeschränkt), Ippendorfer Allee 31, 53127 Bonn). Kontaktadresse: info@modularmedtech.org (`src/_data/site.js`).
-4. Aussagen zu Finanzierung und Umsetzung prüfen: 1,000 Villages ist als Aufruf/Vorschlag formuliert,
+- Impressum und Datenschutz laufen über The Gesamtschau Institute UG (haftungsbeschränkt), Bonn.
+- Kein Tracking, keine Cookies, keine externen Inhalte. Die Datenschutzerklärung beschreibt nur Hosting
+  (GitHub Pages) und Kontakt per E-Mail. Werden später externe Dienste eingebunden, muss sie ergänzt werden.
+- Kontaktadresse: info@modularmedtech.org (`src/_data/site.js`).
+
+## Offene Punkte
+
+1. Aussagen zu Finanzierung und Umsetzung prüfen: 1,000 Villages ist als Aufruf/Vorschlag formuliert,
    nicht als bereits finanziertes Programm.
